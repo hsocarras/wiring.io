@@ -1,6 +1,6 @@
 {
   "name": "wiring.io",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "javascript library inspired on Qt's signal and slot paternt. ",
   "main": "src/wiring.js",
   "scripts": {

@@ -3,7 +3,7 @@ A javascript library for Qt signals and slot pattern.
 
 ## Getting Started
 * ### Install
-#### installing nodbus-plus as a node package
+#### installing wiring.io as a node package
     $ npm install wiring.io
 #### installing nodbus from source
 
