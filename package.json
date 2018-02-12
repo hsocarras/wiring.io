@@ -1,0 +1,31 @@
+{
+  "name": "wiring.io",
+  "version": "0.0.1",
+  "description": "javascript library inspired on Qt's signal and slot paternt. ",
+  "main": "src/wiring.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsocarras/wiring.io.git"
+  },
+  "keywords": [
+    "Qt",
+    "signal",
+    "slots",
+    "javascript"
+  ],
+  "author": {
+    "name": "Héctor E. Socarrás Cabrera",
+    "email": "hsocarras1987@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hsocarras/wire.io/issues"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "homepage": "https://github.com/hsocarras/wire.io#readme"
+}
