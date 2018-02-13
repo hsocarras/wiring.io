@@ -33,32 +33,11 @@ module.exports = class Signal {
   Emit(){
 
         const callbacks = this._callbackStack;
-        let args = arguments;
+        let args = Array.prototype.slice.call(arguments);
 
         // Number of callbacks.
         callbacks.forEach(function(element){
-          switch (args.length) {
-            case 1:
-              element(args[0]);
-              break;
-            case 2:
-              element(args[0], args[1]);
-              break;
-            case 3:
-              element(args[0], args[1], args[2]);
-              break;
-            case 4:
-              element(args[0], args[1], args[2], args[3]);
-              break;
-            case 5:
-              element(args[0], args[1], args[2], args[3], args[4]);
-              break;
-            case 6:
-              element(args[0], args[1], args[2], args[3], args[4], args[5] );
-              break;
-            default:
-              element(args)
-          }
+          element.apply(this, args);          
         })
     }
 
