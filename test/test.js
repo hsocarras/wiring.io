@@ -13,14 +13,17 @@ class Valve {
 
 class Controler {
   constructor(){
+  	this.name;
     this.slot1 = Wiring.Slot(this);
   }
 }
 
 let valve1 = new Valve('xv01001');
 let controler1 = new Controler();
+controler1.name = 'plc1';
 
 controler1.slot1.SetChannel('0', function(PV){
+	console.log(this.name)
   if(PV == 0){
     console.log('valve closed')
   }
@@ -29,6 +32,7 @@ controler1.slot1.SetChannel('0', function(PV){
   }
 })
 controler1.slot1.SetChannel('1', function(PV, engUnit){
+	console.log(this.name);
   console.log('Actul flow is:' + ' ' +PV + ' ' + engUnit)
 })
 

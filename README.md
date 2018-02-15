@@ -5,6 +5,9 @@ A javascript library for Qt signals and slot pattern.
 * ### Install
 #### installing wiring.io as a node package
     $ npm install wiring.io
+#### Using wiring.io on browser
+    <script src="path_to_wiring.io/dist/wiring.io.min-0.1.1.js"></script>
+
 #### installing nodbus from source
 
 * ### Usage:
